@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul  { 
+    list-style: none;
+}
+
+body {
+    background-image: url(./assetes/bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 190%;
+}
+
+header {
+    padding-top: 32px;
+}
+
+header div {
+    width: 180px; /*o width é referente a largura do elemento */
+    margin: auto; /* o margin na função auto centraliza o elemento */
+    background-image: linear-gradient(90deg, #9572FC 0%, 
+    #43E7AD 50.52%, #E2D45C 100%);
+   
+    border-radius: 50%;
+
+    transition: .3s; /*aqui, pode-se alterar o tempo de transição*/
+}
+
+header div:hover {
+    transform: scale(1.1); /*transforma-se a própriedade*/
+}
+
+header div img {
+    width: 100%;
+    border-radius: 50%;
+    display: flex; /*já o display, ele altera a estrutura do elemento, como este se organiza */
+    padding: 4px; /*serve para espaçar*/
+}
+
+main {
+    max-width: 580px;
+    width: 90%;
+    margin: auto;
+
+    display: grid; /*se fosse o flex, se estenderia por uma grande fileira, já no grid, ele se ajusta a colunas */
+    gap: 24px; /*argumento para propriedade grid, poderia ser padding no caso do flex*/
+    margin: 32px auto; /*aqui eu poderia usar o margin top e bottom, 
+    ou os dois atribuindo apenas a mesma função 2 argumentos "32px e o auto" */
+} 
+
+section {
+    color: white;
+    
+    background-image: linear-gradient(90deg, #9572FC 0%, 
+    #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 10px; /*borda do elemento*/ 
+}
+
+section ul li {
+    transition: .3s;
+}
+
+section ul li:hover {
+    transform: scale(1.1);
+}
+
+section div {
+    background: #2A2634; 
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+ 
+section h2 {
+    letter-spacing: -0.47px; /*como o próprio nome diz, espaço entre as letras*/
+}
+
+section p {
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+    padding-top: 7px;
+}
+
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px; 
+    
+    margin-top: 24px;
+}
+
+.game-list img  {
+    width: 90px;
+    border-radius: 10px;
+}
